@@ -1,166 +1,162 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>블로그 — 강남 셔츠룸 서버 웜업 | 마포의 냉소를 깨는 자</title>
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <meta name="description" content="강남 셔츠룸 서버 웜업에 대한 내 생각: 규칙을 따르는 건 지루하다. 마포 웜업, 진짜 냉소를 깨는 방법. 010-6279-0862">
-    <meta name="keywords" content="강남 셔츠룸, 서버 웜업, 마포 웜업, 셔츠룸 서버, 블로그, 웜업 문화, sf-t3-1779642675702-258">
-    <link rel="canonical" href="https://sf-t3-1779642675702-258.maphoshirts.today/blog.html">
-    <meta property="og:title" content="블로그 — 강남 셔츠룸 서버 웜업 | 마포의 냉소를 깨는 자">
-    <meta property="og:description" content="강남 셔츠룸 서버 웜업에 대한 내 생각: 규칙을 따르는 건 지루하다. 마포 웜업, 진짜 냉소를 깨는 방법. 010-6279-0862">
-    <style>
-        /* RESET / BASE */
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; font-size: 16px; background: #0f0f0f; color: #e0e0e0; }
-        body { font-family: 'Courier New', Courier, monospace; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
-        img, svg { max-width: 100%; display: block; }
-        a { color: #ff0077; text-decoration: underline; text-underline-offset: 4px; transition: color 0.2s; }
-        a:hover { color: #ff55aa; }
-        ul { list-style: none; padding: 0; }
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>블로그 — 강남 셔츠룸 서버 웜업 | 마포의 냉소를 깨는 자</title>
+ <meta name="description" content="강남 셔츠룸 서버 웜업에 대한 내 생각: 규칙을 따르는 건 지루하다. 마포 웜업, 진짜 냉소를 깨는 방법.">
+ <meta name="keywords" content="강남 셔츠룸, 서버 웜업, 마포 웜업, 셔츠룸 서버, 블로그, 웜업 문화, sf-t3-1779642675702-258">
+ <link rel="canonical" href="https://sf-t3-1779642675702-258.maphoshirts.today/blog.html">
+ <meta property="og:title" content="블로그 — 강남 셔츠룸 서버 웜업 | 마포의 냉소를 깨는 자">
+ <meta property="og:description" content="강남 셔츠룸 서버 웜업에 대한 내 생각: 규칙을 따르는 건 지루하다. 마포 웜업, 진짜 냉소를 깨는 방법.">
+ <style>
+ /* RESET / BASE */
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ html { scroll-behavior: smooth; font-size: 16px; background: #0f0f0f; color: #e0e0e0; }
+ body { font-family: 'Courier New', Courier, monospace; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+ img, svg { max-width: 100%; display: block; }
+ a { color: #ff0077; text-decoration: underline; text-underline-offset: 4px; transition: color 0.2s; }
+ a:hover { color: #ff55aa; }
+ ul { list-style: none; padding: 0; }
 
-        /* BRUTAL CORE */
-        h1 { font-size: 2.8rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; line-height: 1; color: #ff0077; margin-bottom: 0.5rem; border-left: 8px solid #ff0077; padding-left: 1rem; }
-        h2 { font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; color: #ffaa00; border-bottom: 3px solid #ffaa00; display: inline-block; padding-bottom: 0.3rem; }
-        h3 { font-size: 1.3rem; font-weight: 600; color: #00ffcc; margin-bottom: 0.6rem; }
-        p { margin-bottom: 1.2rem; }
+ /* BRUTAL CORE */
+ h1 { font-size: 2.8rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; line-height: 1; color: #ff0077; margin-bottom: 0.5rem; border-left: 8px solid #ff0077; padding-left: 1rem; }
+ h2 { font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; color: #ffaa00; border-bottom: 3px solid #ffaa00; display: inline-block; padding-bottom: 0.3rem; }
+ h3 { font-size: 1.3rem; font-weight: 600; color: #00ffcc; margin-bottom: 0.6rem; }
+ p { margin-bottom: 1.2rem; }
 
-        /* SPACE */
-        .gap-48 { margin-bottom: 48px; }
-        .padding-72 { padding: 72px 24px; }
-        .section-gap { margin-top: 64px; margin-bottom: 64px; }
+ /* SPACE */
+ .gap-48 { margin-bottom: 48px; }
+ .padding-72 { padding: 72px 24px; }
+ .section-gap { margin-top: 64px; margin-bottom: 64px; }
 
-        /* LAYOUT */
-        .full-bleed { width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 0 24px; }
-        .asymmetric { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; align-items: start; }
-        @media (max-width: 768px) { .asymmetric { grid-template-columns: 1fr; gap: 32px; } }
+ /* LAYOUT */
+ .full-bleed { width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 0 24px; }
+ .asymmetric { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; align-items: start; }
+ @media (max-width: 768px) { .asymmetric { grid-template-columns: 1fr; gap: 32px; } }
 
-        /* NAV */
-        nav { background: #1a1a1a; border-bottom: 4px solid #ff0077; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-        nav .logo { font-size: 1.4rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; color: #ff0077; }
-        nav .nav-links { display: flex; gap: 24px; align-items: center; }
-        nav .nav-links a { color: #e0e0e0; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 6px 0; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
-        nav .nav-links a:hover { border-bottom-color: #ff0077; }
-        .hamburger-menu { display: none; cursor: pointer; flex-direction: column; gap: 4px; }
-        .hamburger-menu span { width: 28px; height: 3px; background: #e0e0e0; border-radius: 2px; }
+ /* NAV */
+ nav { background: #1a1a1a; border-bottom: 4px solid #ff0077; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+ nav .logo { font-size: 1.4rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; color: #ff0077; }
+ nav .nav-links { display: flex; gap: 24px; align-items: center; }
+ nav .nav-links a { color: #e0e0e0; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 6px 0; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
+ nav .nav-links a:hover { border-bottom-color: #ff0077; }
+ .hamburger-menu { display: none; cursor: pointer; flex-direction: column; gap: 4px; }
+ .hamburger-menu span { width: 28px; height: 3px; background: #e0e0e0; border-radius: 2px; }
 
-        @media (max-width: 768px) {
-            .hamburger-menu { display: flex; }
-            nav .nav-links { display: none; flex-direction: column; width: 100%; margin-top: 12px; gap: 12px; }
-            nav .nav-links.active { display: flex; }
-        }
+ @media (max-width: 768px) {
+ .hamburger-menu { display: flex; }
+ nav .nav-links { display: none; flex-direction: column; width: 100%; margin-top: 12px; gap: 12px; }
+ nav .nav-links.active { display: flex; }
+ }
 
-        /* BUTTONS & CTA */
-        .cta-btn { display: inline-block; background: #ff0077; color: #0f0f0f; padding: 14px 36px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; text-decoration: none; border: none; cursor: pointer; transition: all 0.2s; font-size: 1rem; }
-        .cta-btn:hover { background: #ff55aa; transform: scale(1.05); }
+ /* BUTTONS & CTA */
+ .cta-btn { display: inline-block; background: #ff0077; color: #0f0f0f; padding: 14px 36px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; text-decoration: none; border: none; cursor: pointer; transition: all 0.2s; font-size: 1rem; }
+ .cta-btn:hover { background: #ff55aa; transform: scale(1.05); }
 
-        /* BLOCKQUOTE */
-        blockquote { border-left: 6px solid #ffaa00; padding-left: 1.2rem; margin: 1.5rem 0; font-style: italic; color: #ffaa00; }
+ /* BLOCKQUOTE */
+ blockquote { border-left: 6px solid #ffaa00; padding-left: 1.2rem; margin: 1.5rem 0; font-style: italic; color: #ffaa00; }
 
-        /* CARD GRID (재사용) */
-        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+ /* CARD GRID (재사용) */
+ .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
 
-        /* FOOTER */
-        footer { background: #1a1a1a; border-top: 4px solid #ff0077; padding: 32px 24px; text-align: center; margin-top: auto; font-size: 0.85rem; color: #888; }
-        footer a { color: #ffaa00; }
-    </style>
+ /* FOOTER */
+ footer { background: #1a1a1a; border-top: 4px solid #ff0077; padding: 32px 24px; text-align: center; margin-top: auto; font-size: 0.85rem; color: #888; }
+ footer a { color: #ffaa00; }
+ </style>
   <meta property="og:url" content="https://sf-t3-1779642675702-258.maphoshirts.today/blog.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <nav>
-        <div class="logo">WARMUP</div>
-        <div class="hamburger-menu" onclick="this.nextElementSibling.classList.toggle('active')">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="nav-links">
-            <a href="/">홈</a>
-            <a href="/about">소개</a>
-            <a href="/blog">블로그</a>
-            <a href="/contact">문의</a>
-            <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
-        </div>
-    </nav>
+ <nav>
+ <div class="logo">WARMUP</div>
+ <div class="hamburger-menu" onclick="this.nextElementSibling.classList.toggle('active')">
+ 
+ 
+ 
+ </div>
+ <div class="nav-links">
+ <a href="/">홈</a>
+ <a href="/about">소개</a>
+ <a href="/blog">블로그</a>
+ <a href="/contact">문의</a>
+ 
+ </div>
+ </nav>
 
-    <main class="full-bleed padding-72">
-        <!-- 블로그 헤더 -->
-        <header class="gap-48">
-            <h1>강남 셔츠룸 서버 웜업?<br>마포의 규칙을 깨는 법</h1>
-            <p style="font-size:1.1rem; color:#ffaa00;">2025.04.08 — by 웜업 크루</p>
-        </header>
+ <main class="full-bleed padding-72">
+ <!-- 블로그 헤더 -->
+ <header class="gap-48">
+ <h1>강남 셔츠룸 서버 웜업?<br>마포의 규칙을 깨는 법</h1>
+ <p style="font-size:1.1rem; color:#ffaa00;">2025.04.08 — by 웜업 크루</p>
+ </header>
 
-        <!-- 블로그 본문 -->
-        <article class="gap-48">
-            <h2>왜 지루한 걸 계속 따라 해?</h2>
-            <p>강남 셔츠룸 서버 웜업이라는 키워드, 익숙하지? 근데 그 익숙함이 오히려 너를 약하게 만든다. 규칙을 따른다고 규칙이 깨지는 건 아냐. 마포에서 우리가 하는 건 달라. 우리는 서버를 식히는 게 아니라 <strong>뜨겁게 만든다</strong>. 셔츠는 벗고, 시스템은 올리고.</p>
+ <!-- 블로그 본문 -->
+ <article class="gap-48">
+ <h2>왜 지루한 걸 계속 따라 해?</h2>
+ <p>강남 셔츠룸 서버 웜업이라는 키워드, 익숙하지? 근데 그 익숙함이 오히려 너를 약하게 만든다. 규칙을 따른다고 규칙이 깨지는 건 아냐. 마포에서 우리가 하는 건 달라. 우리는 서버를 식히는 게 아니라 <strong>뜨겁게 만든다</strong>. 셔츠는 벗고, 시스템은 올리고.</p>
 
-            <h2>진짜 웜업은 이렇게</h2>
-            <blockquote>"서버 웜업은 단순한 예열이 아니다. 그것은 시스템의 태도를 결정하는 순간이다." — 마포 웜업 매뉴얼</blockquote>
-            <p>일반적인 강남 셔츠룸 웜업은 정해진 프로토콜을 따른다. 하지만 우리는 그 프로토콜을 찢어버린다. 직접 부딪히고, 에러를 만들고, 그 에러에서 통찰을 얻는다. 010-6279-0862로 전화해봐. 우리가 어떻게 하는지 보여줄게.</p>
+ <h2>진짜 웜업은 이렇게</h2>
+ <blockquote>"서버 웜업은 단순한 예열이 아니다. 그것은 시스템의 태도를 결정하는 순간이다." — 마포 웜업 매뉴얼</blockquote>
+ <p>일반적인 강남 셔츠룸 웜업은 정해진 프로토콜을 따른다. 하지만 우리는 그 프로토콜을 찢어버린다. 직접 부딪히고, 에러를 만들고, 그 에러에서 통찰을 얻는다. 우리가 어떻게 하는지 보여줄게.</p>
 
-            <h3>3단계 마포식 웜업</h3>
-            <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
-                <li><strong>1. 셔츠 해제:</strong> 형식은 버려. 필요한 건 오직 성능.</li>
-                <li><strong>2. 냉소 주입:</strong> 익숙한 것에 의문을 던져. 시스템을 의심해.</li>
-                <li><strong>3. 뜨거운 재부팅:</strong> 모든 캐시를 지우고 처음부터 다시 시작.</li>
-            </ul>
-            <p>이게 단순한 기술인 줄 알아? 아니야. 이것은 선언이다. 강남 셔츠룸이라는 수많은 템플릿 사이에서, 마포는 유일무이한 결함이 되는 거야.</p>
+ <h3>3단계 마포식 웜업</h3>
+ <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+ <li><strong>1. 셔츠 해제:</strong> 형식은 버려. 필요한 건 오직 성능.</li>
+ <li><strong>2. 냉소 주입:</strong> 익숙한 것에 의문을 던져. 시스템을 의심해.</li>
+ <li><strong>3. 뜨거운 재부팅:</strong> 모든 캐시를 지우고 처음부터 다시 시작.</li>
+ </ul>
+ <p>이게 단순한 기술인 줄 알아? 아니야. 이것은 선언이다. 강남 셔츠룸이라는 수많은 템플릿 사이에서, 마포는 유일무이한 결함이 되는 거야.</p>
 
-            <h2>왜 지금이 기회인가</h2>
-            <p>모두가 똑같은 웜업을 반복할 때, 우리는 다른 선택을 한다. 규칙을 따르는 건 안전해 보이지만 결국 평범해진다. <strong>평범함은 죽음이다.</strong> 강남 셔츠룸 서버 웜업이라는 문구를 검색하는 너, 이미 뭔가 깨고 싶어하는 거 아냐? 그럼 여기로 와. 우리가 방법을 알려줄게.</p>
+ <h2>왜 지금이 기회인가</h2>
+ <p>모두가 똑같은 웜업을 반복할 때, 우리는 다른 선택을 한다. 규칙을 따르는 건 안전해 보이지만 결국 평범해진다. <strong>평범함은 죽음이다.</strong> 강남 셔츠룸 서버 웜업이라는 문구를 검색하는 너, 이미 뭔가 깨고 싶어하는 거 아냐? 그럼 여기로 와. 우리가 방법을 알려줄게.</p>
 
-            <div style="background: #1a1a1a; padding: 24px; border-left: 6px solid #ff0077; margin: 32px 0;">
-                <p style="margin:0; font-weight: bold; text-transform: uppercase;">📞 지금 전화: <a href="tel:01062790862" style="color:#ff0077;">010-6279-0862</a></p>
-                <p style="margin:0; font-size:0.9rem;">— 상담은 30분, 웜업은 10분. 결과는 영원히.</p>
-            </div>
+ <div style="background: #1a1a1a; padding: 24px; border-left: 6px solid #ff0077; margin: 32px 0;">
+ <p style="margin:0; font-weight: bold; text-transform: uppercase;">📞 지금 전화: </p>
+ <p style="margin:0; font-size:0.9rem;">— 상담은 30분, 웜업은 10분. 결과는 영원히.</p>
+ </div>
 
-            <h2>마지막으로, 너에게</h2>
-            <p>이 글은 그냥 읽고 넘길 게 아냐. 행동으로 옮겨야 의미가 있어. 강남 셔츠룸 서버 웜업이 뭐가 그리 대단하다고? 대단한 건 시스템이 아니라 시스템을 깨는 너의 태도야. 마포에서 기다리고 있다. 010-6279-0862. 오늘 도전하지 않으면 내일 후회할 거야.</p>
-        </article>
+ <h2>마지막으로, 너에게</h2>
+ <p>이 글은 그냥 읽고 넘길 게 아냐. 행동으로 옮겨야 의미가 있어. 강남 셔츠룸 서버 웜업이 뭐가 그리 대단하다고? 대단한 건 시스템이 아니라 시스템을 깨는 너의 태도야. 마포에서 기다리고 있다. 오늘 도전하지 않으면 내일 후회할 거야.</p>
+ </article>
 
-        <!-- 관련 카드 (디자인 시스템 유지) -->
-        <section class="section-gap">
-            <h2>더 알아보기</h2>
-            <div class="card-grid gap-48">
-                <div style="background:#1a1a1a; padding:24px; border-bottom:4px solid #ff0077;">
-                    <h3 style="color:#ff0077;">마포 웜업 매뉴얼</h3>
-                    <p>규칙을 깨는 7가지 방법. 초보자도 가능.</p>
-                    <a href="#" style="color:#ffaa00;">읽기 →</a>
-                </div>
-                <div style="background:#1a1a1a; padding:24px; border-bottom:4px solid #ffaa00;">
-                    <h3 style="color:#ffaa00;">강남 셔츠룸의 진실</h3>
-                    <p>왜 똑같은 웜업이 반복되는가? 그 속임수를 폭로한다.</p>
-                    <a href="#" style="color:#ffaa00;">읽기 →</a>
-                </div>
-                <div style="background:#1a1a1a; padding:24px; border-bottom:4px solid #00ffcc;">
-                    <h3 style="color:#00ffcc;">서버 온도 측정법</h3>
-                    <p>뜨거운 서버는 성능의 증거다. 직접 측정해봐.</p>
-                    <a href="#" style="color:#ffaa00;">읽기 →</a>
-                </div>
-            </div>
-        </section>
+ <!-- 관련 카드 (디자인 시스템 유지) -->
+ <section class="section-gap">
+ <h2>더 알아보기</h2>
+ <div class="card-grid gap-48">
+ <div style="background:#1a1a1a; padding:24px; border-bottom:4px solid #ff0077;">
+ <h3 style="color:#ff0077;">마포 웜업 매뉴얼</h3>
+ <p>규칙을 깨는 7가지 방법. 초보자도 가능.</p>
+ <a href="#" style="color:#ffaa00;">읽기 →</a>
+ </div>
+ <div style="background:#1a1a1a; padding:24px; border-bottom:4px solid #ffaa00;">
+ <h3 style="color:#ffaa00;">강남 셔츠룸의 진실</h3>
+ <p>왜 똑같은 웜업이 반복되는가? 그 속임수를 폭로한다.</p>
+ <a href="#" style="color:#ffaa00;">읽기 →</a>
+ </div>
+ <div style="background:#1a1a1a; padding:24px; border-bottom:4px solid #00ffcc;">
+ <h3 style="color:#00ffcc;">서버 온도 측정법</h3>
+ <p>뜨거운 서버는 성능의 증거다. 직접 측정해봐.</p>
+ <a href="#" style="color:#ffaa00;">읽기 →</a>
+ </div>
+ </div>
+ </section>
 
-        <!-- CTA -->
-        <div style="text-align:center; margin-top:48px;">
-            <a href="tel:01062790862" class="cta-btn">010-6279-0862 지금 도전</a>
-        </div>
-    </main>
+ <!-- CTA -->
+ 
+ </main>
 
-    <footer>
-        <p>© 2025 마포 서버 웜업 — 강남 셔츠룸 문화를 깨는 자들. <a href="tel:01062790862">010-6279-0862</a></p>
-        <p style="margin-top:8px; font-size:0.75rem; color:#555;">본 페이지는 성인 대상 정보를 포함합니다. 모든 상담은 익명으로 처리됩니다.</p>
-    </footer>
+ <footer>
+ <p>© 2025 마포 서버 웜업 — 강남 셔츠룸 문화를 깨는 자들. </p>
+ <p style="margin-top:8px; font-size:0.75rem; color:#555;">본 페이지는 성인 대상 정보를 포함합니다. 모든 상담은 익명으로 처리됩니다.</p>
+ </footer>
 
-    <script>
-        // 간단한 햄버거 메뉴 (네비게이션 토글)
-        document.querySelector('.hamburger-menu').addEventListener('click', function() {
-            this.nextElementSibling.classList.toggle('active');
-        });
-    </script>
+ <script>
+ // 간단한 햄버거 메뉴 (네비게이션 토글)
+ document.querySelector('.hamburger-menu').addEventListener('click', function() {
+ this.nextElementSibling.classList.toggle('active');
+ });
+ </script>
 </body>
 </html>
